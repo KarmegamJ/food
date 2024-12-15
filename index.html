@@ -807,7 +807,7 @@
     </section>
     <section class="pt-[40px] md:pt-10">
       <div class="flex flex-wrap justify-center gap-20 px-4 md:mt-40 lg:mt-20">
-        <div class="cormorant-garamond-bold">
+        <div class="cormorant-garamond-bold order-2 lg:order-1">
           <p
             class="text-[#DF3F01] text-[12px] md:text-base jost tracking-widest mt-4"
           >
@@ -828,10 +828,10 @@
           <img
             src="foodimages/chefimage1.png"
             alt="chefimage"
-            class="w-full lg:w-[450px] mt-4"
+            class="md:block hidden md:h-[300px] lg:w-[600px] mt-4"
           />
           <button
-            class="text-white cormorant-garamond-bold font-bold text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-sm p-4 border border-[#DF3F01] mt-4"
+            class="text-white cormorant-garamond-bold font-bold text-sm p-2 md:text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-sm md:p-4 border border-[#DF3F01] mt-4"
           >
             BECOME A CHEFS
             <img
@@ -841,7 +841,7 @@
             />
           </button>
         </div>
-        <div class="w-full lg:w-auto">
+        <div class="w-full lg:w-auto order-1 lg:order-2">
           <div class="relative flex">
             <img
               src="foodimages/chefimage2.png"
@@ -860,35 +860,37 @@
     </section>
     <section>
       <div
-        class="flex-col justify-items-center text-center pt-10 md:mt-20 relative bg-cover md:pt-20 md:h-[400px]"
+        class="flex-col justify-items-center text-center mt-10 p-10 md:mt-20 relative bg-cover md:pt-20 md:h-[400px]"
         style="background-image: url(foodimages/presentationbg.png)"
       >
-        <p class="text-[#DF3F01] text-base jost tracking-widest">
+        <p class="text-[#DF3F01] text-[12px] md:text-base jost tracking-widest">
           FOOD PRESENTATION
         </p>
         <p
-          class="text-white text-[40px] cormorant-garamond-bold md:w-[620px] mt-2 place-content-center items-center"
+          class="text-white md:text-[40px] text-[35px] cormorant-garamond-bold md:w-[620px] mt-2 place-content-center items-center"
         >
           Elevate Your Dining Experience Join Us for Exquisite Cuisine
         </p>
         <img
           src="foodimages/playbutton.png"
           alt="playbutton"
-          class="w-[80px] mt-2"
+          class="w-[50px] md:w-[80px] mt-2"
         />
       </div>
     </section>
     <section>
       <div class="flex flex-wrap justify-center gap-12 px-4 text-white mt-28">
         <div class="order-2 cormorant-garamond-bold lg:order-1">
-          <p class="text-[#DF3F01] text-base jost tracking-widest">
+          <p
+            class="text-[#DF3F01] text-[12px] md:text-base jost tracking-widest"
+          >
             BOOKING TABLE
           </p>
-          <p class="text-white text-[36px] md:text-[57px] mt-1">
+          <p class="text-white text-[35px] md:text-[57px] mt-1">
             Make A Reservations Table
           </p>
           <p
-            class="text-[16px] lg:w-[380px] text-gray-400 jost text-justify font-medium"
+            class="text-[12px] md:text-[16px] lg:w-[380px] text-gray-400 jost text-justify font-medium"
           >
             To make a reservation at our restaurant, simply call our booking
             hotline or visit our website.
@@ -897,7 +899,7 @@
             class="lg:w-[720px] md:h-[360px] text-white flex-wrap flex place-content-between mt-7"
           >
             <div
-              class="md:w-[350px] w-full h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="text"
@@ -915,7 +917,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="tel"
@@ -929,7 +931,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="number"
@@ -948,7 +950,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="number"
@@ -971,7 +973,7 @@
           </div>
           <button
             type="submit"
-            class="flex items-center transition-all justify-center bg-[#DF3F01] px-[20px] py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold text-lg font-bold mt-5"
+            class="flex items-center transition-all justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold text-xs p-3 md:text-lg font-medium md:font-bold mt-5"
           >
             BOOK A TABLE
             <img src="foodimages/arrow-right1.png" class="w-[16px]" alt="" />
