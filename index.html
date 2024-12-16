@@ -59,6 +59,29 @@
       .animate-spin1 {
         animation: spin 20s linear infinite;
       }
+      a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Space between text and underline */
+        width: 0;
+        height: 2px;
+        background-color: #ff5722; /* Underline color */
+        transition: width 0.3s ease;
+      }
+      a:hover {
+        color: #ff5722;
+      }
+      a:hover::after {
+        width: 100%; /* Full underline on hover */
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+      }
     </style>
   </head>
   <body>
