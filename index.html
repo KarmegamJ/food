@@ -65,7 +65,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -5px; /* Space between text and underline */
+        bottom: -4px; /* Space between text and underline */
         width: 0;
         height: 2px;
         background-color: #ff5722; /* Underline color */
@@ -98,11 +98,11 @@
       <div class="hidden text-xl jost md:block">
         <ul class="flex gap-8 font-medium">
           <li><a href="">Home</a></li>
-          <li><a href="">Page</a></li>
-          <li><a href="">Shop</a></li>
           <li><a href="">Menu</a></li>
+          <li><a href="">Cart</a></li>
           <li><a href="">About us</a></li>
           <li><a href="">Blog</a></li>
+          <li><a href="">Profile</a></li>
         </ul>
       </div>
       <div class="hidden md:gap-5 md:flex">
@@ -410,7 +410,7 @@
         </div>
       </div>
     </section>
-    <section data-aos="flip-left" class="mt-10">
+    <section data-aos="fade-up" data-aos-duration="3000" class="mt-10">
       <div
         class="border border-[#DF3F01] p-5 m-2 lg:m-[100px] lg:p-20 rounded-md md:border-dashed"
       >
@@ -812,7 +812,11 @@
           <div
             class="flex flex-col items-center justify-center gap-4 lg:flex-row lg:gap-14 mt-7"
           >
-            <div>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+            >
               <img
                 src="foodimages/storyimage.png"
                 alt="pic"
@@ -821,7 +825,7 @@
             </div>
             <div
               data-aos="fade-right"
-              data-aos-offset="200"
+              data-aos-offset="100"
               data-aos-easing="ease-in-sine"
               class="px-4 text-white lg:mt-5 lg:px-0 cormorant-garamond-bold"
             >
@@ -920,6 +924,7 @@
     <section>
       <div
         data-aos="zoom-in"
+        data-aos-offset="300"
         class="flex-col justify-items-center text-center mt-10 p-5 md:mt-20 relative bg-cover md:pt-20 md:h-[400px]"
         style="background-image: url(foodimages/presentationbg.png)"
       >
@@ -1047,7 +1052,11 @@
             <img src="foodimages/arrow-right1.png" class="w-[16px]" alt="" />
           </button>
         </div>
-        <div class="lg:w-[510px] w-full xl:h-[620px] order-1 lg:order-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="lg:w-[510px] w-full xl:h-[620px] order-1 lg:order-2"
+        >
           <img src="foodimages/formimg.png" alt="" class="" />
         </div>
       </div>
@@ -1077,7 +1086,11 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-4 md:gap-8 mt-9">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="flex flex-wrap justify-center gap-4 md:gap-8 mt-9"
+        >
           <div class="w-[350px] md:w-[400px]">
             <div class="flex relative lg:w-[400px]">
               <img
