@@ -4,6 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foody_productpage</title>
+    <link rel="icon" href="foodimages/logo.jpeg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,350;0,400;0,500;0,600;0,700;1,350;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,350;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,350;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="food2style.css" />
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .jost {
+        font-family: "Jost", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .cormorant-garamond-bold {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .custom-cursor-section {
+        cursor: url(foodimages/foodco-circle.png), auto;
+      }
+      * body {
+        background-color: #100f0f;
+      }
+      .kenburns-top-left {
+        -webkit-animation: kenburns-top-left 5s ease-out both;
+        animation: kenburns-top-left 5s ease-out both;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin1 {
+        animation: spin 20s linear infinite;
+      }
+      a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px; /* Space between text and underline */
+        width: 0;
+        height: 2px;
+        background-color: #ff5722; /* Underline color */
+        transition: width 0.3s ease;
+      }
+      a:hover {
+        color: #ff5722;
+      }
+      a:hover::after {
+        width: 100%; /* Full underline on hover */
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+      }
+    </style>
   </head>
   <body>
     <nav
