@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Foody_productpage</title>
   </head>
-  <body></body>
+  <body>
+    <nav
+      class="bg-black py-4 flex justify-around items-center text-white fixed top-0 z-[9999999] w-full"
+    >
+      <div
+        class="md:px-[20px] mx-2 cormorant-garamond-bold font-normal text-xl md:text-3xl"
+      >
+        Foody
+      </div>
+      <div class="hidden text-xl jost md:block">
+        <ul class="flex gap-8 font-medium">
+          <li><a href="">Home</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Cart</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Profile</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:gap-5 md:flex">
+        <div
+          class="items-center justify-center hidden gap-1 font-medium md:flex jost"
+        >
+          <img
+            src="foodimages/phone-incoming.png"
+            alt=""
+            class="md:w-[32px] w-5 text-xs md:text-[16px]"
+          />000 (123) 456 89
+        </div>
+        <div
+          class="flex items-center transition-all text-xs justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] md:gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold md:text-lg font-bold"
+        >
+          ORDER NOW
+          <img
+            src="/foodimages/arrow-right1.png"
+            alt=""
+            class="w-[20px] hidden md:block mt-1"
+          />
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
