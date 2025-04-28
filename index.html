@@ -85,68 +85,74 @@
         display: inline-block;
         transition: color 0.3s ease;
       }
+      #preloader {
+        background: #fff url(foodimages/loader.gif) no-repeat center;
+        background-size: 15%;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+      }
     </style>
   </head>
   <body>
-    <div
-      class="bg-black py-4 flex justify-around items-center text-white fixed top-0 z-[9999999] w-full"
-    >
+    <div class="" id="preloader"></div>
+    <header>
       <div
-        class="md:px-[20px] mx-2 cormorant-garamond-bold font-normal text-xl md:text-3xl"
+        class="bg-black py-4 flex justify-around items-center text-white fixed top-0 z-[9999999] w-full"
       >
-        Foody
-      </div>
-      <div class="hidden text-xl jost md:block">
-        <ul class="flex gap-8 font-medium">
-          <li><a href="">Home</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Cart</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Profile</a></li>
-        </ul>
-      </div>
-      <div class="hidden md:gap-5 md:flex">
         <div
-          class="items-center justify-center hidden gap-1 font-medium md:flex jost"
+          class="md:px-[20px] mx-2 cormorant-garamond-bold font-normal text-xl md:text-3xl"
         >
-          <img
-            src="foodimages/phone-incoming.png"
-            alt=""
-            class="md:w-[32px] w-5 text-xs md:text-[16px]"
-          />000 (123) 456 89
+          Foody
         </div>
-        <div
-          class="flex items-center transition-all text-xs justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] md:gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold md:text-lg font-bold"
-        >
-          ORDER NOW
-          <img
-            src="/foodimages/arrow-right1.png"
-            alt=""
-            class="w-[20px] hidden md:block mt-1"
-          />
+        <div class="hidden text-xl jost md:block">
+          <ul class="flex gap-8 font-medium">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Profile</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:gap-5 md:flex">
+          <div
+            class="items-center justify-center hidden gap-1 font-medium md:flex jost"
+          >
+            <img
+              src="foodimages/phone-incoming.png"
+              alt=""
+              class="md:w-[32px] w-5 text-xs md:text-[16px]"
+            />000 (123) 456 89
+          </div>
+          <div
+            class="flex items-center transition-all text-xs justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] md:gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-full cormorant-garamond-bold md:text-xl font-bold"
+          >
+            ORDER NOW
+          </div>
         </div>
       </div>
-    </div>
+    </header>
     <section>
       <div>
         <div
-          class="relative bg-[url(foodimages/headerimg.png)] bg-center bg w-full bg-cover md:bg-cover h-[550px] md:h-[730px]"
+          class="relative bg-[url(foodimages/headerimg.png)] bg-center bg w-full bg-cover md:bg-cover h-[650px] md:h-[730px]"
         >
           <div
-            class="text-white text-[40px] md:text-[80px] cormorant-garamond-bold font-medium md:px-[90px] py-5 md:max-w-[1200px] md:pt-[130px] p-4"
+            class="text-white text-[40px] text-center md:text-start md:text-[80px] cormorant-garamond-bold font-medium md:px-[90px] py-5 md:max-w-[1200px] md:pt-[130px] p-4"
           >
             <h3
               data-aos="fade-up"
               data-aos-duration="3000"
-              class="p-4 mt-8 text-[35px] cormorant-garamond-bold md:mt-4 max-w-[250px] md:text-[80px] md:max-w-[1200px] md:px-0"
+              class="p-4 mt-44 text-[36px] cormorant-garamond-bold md:mt-4 max-w-[360px] md:text-[80px] md:max-w-[1200px] md:px-0"
             >
-              Taste the Difference Explore Our Chef's Masterpieces
+              Taste the Difference Explore Our Chef 's Masterpieces
             </h3>
             <p
               data-aos="fade-up"
               data-aos-duration="3000"
-              class="text-[12px] md:text-[18px] text-white opacity-75 w-[200px] md:w-[750px] text-justify px-[15px] font-normal jost md:font-medium md:mt-4"
+              class="text-[14px] md:text-[18px] md:text-start text-white opacity-75 w-full md:w-[750px] text-center px-[15px] font-normal jost md:font-medium md:mt-4"
             >
               Our menu is a celebration of flavors from around the world,
               crafted with care and creativity by our talented team of chefs.
@@ -156,7 +162,7 @@
             <button
               data-aos="fade-up"
               data-aos-duration="3000"
-              class="md:text-2xl mb-8 text-xs p-3 bg-[#DF3F01] gap-2 md:px-[16px] md:py-[15px] flex w-auto mt-3 md:mt-8 ml-4 hover:border-white border border-transparent transition-all cormorant-garamond-bold font-semibold items-center rounded-sm"
+              class="md:text-2xl mb-8 text-xs p-3 bg-[#DF3F01] gap-2 md:px-[20px] md:py-[15px] place-self-center md:place-self-start flex w-auto mt-9 md:mt-8 ml-4 hover:border-white border border-transparent transition-all cormorant-garamond-bold font-semibold items-center rounded-full"
             >
               VIEW OUR MENU
               <img
@@ -165,23 +171,25 @@
                 class="w-3 md:w-[16px]"
               />
             </button>
-            <div
-              class="md:w-[150px] w-[80px] absolute top-20 md:top-44 right-10 md:right-44"
-            >
-              <img
-                src="foodimages/tempfoodcircle1.png"
-                alt="circle"
-                class="origin-center animate-spin1"
-              />
-            </div>
-            <div
-              class="absolute top-[115px] md:top-[240px] right-[74px] md:right-[238px]"
-            >
-              <img
-                src="foodimages/playfoodcircle.png"
-                alt="circle"
-                class="flex h-3 origin-center md:h-6"
-              />
+            <div>
+              <div
+                class="md:w-[150px] w-[80px] absolute top-20 md:top-44 right-10 md:right-44"
+              >
+                <img
+                  src="foodimages/tempfoodcircle1.png"
+                  alt="circle"
+                  class="origin-center animate-spin1"
+                />
+              </div>
+              <div
+                class="absolute top-[115px] md:top-[240px] right-[74px] md:right-[238px]"
+              >
+                <img
+                  src="foodimages/playfoodcircle.png"
+                  alt="circle"
+                  class="flex h-3 origin-center md:h-6"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -322,23 +330,26 @@
       >
         <div class="flex flex-col lg:flex-row">
           <div
-            class="flex items-center justify-center m-2 inset-0 bg-[url(foodimages/aboutfoodimage.png)] md:bg-cover bg-cover h-[300px] w-full md:h-auto md:w-[650px]"
+            class="flex items-center justify-center m-2 inset-0 md:bg-cover bg-cover h-full w-fit md:h-auto md:w-[650px]"
           >
-            <div class="relative">
-              <img
-                src="foodimages/foodcircleorange.png"
-                alt=""
-                class="z-10 animate-spin1 md:left-72 w-[100px] md:w-[150px]"
-              />
-
-              <div
-                class="absolute md:top-[55px] md:left-[60px] left-[40px] top-[38px] inset-0"
-              >
+            <img src="foodimages/aboutfoodimage.png" alt="" />
+            <div class="absolute">
+              <div class="relative">
                 <img
-                  src="foodimages/F.png"
+                  src="foodimages/foodcircleorange.png"
                   alt=""
-                  class="flex items-center justify-center md:bottom-[260px] z-20 top-[170px] left-[206px] md:left-[350px] w-5 md:w-8"
+                  class="z-10 animate-spin1 md:left-72 w-[100px] md:w-[150px]"
                 />
+
+                <div
+                  class="absolute md:top-[55px] md:left-[60px] left-[40px] top-[38px] inset-0"
+                >
+                  <img
+                    src="foodimages/F.png"
+                    alt=""
+                    class="flex items-center justify-center md:bottom-[260px] z-20 top-[170px] left-[206px] md:left-[350px] w-5 md:w-8"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -382,7 +393,7 @@
             </div>
             <div class="flex gap-8 mt-4 md:mt-12 justify-evenly">
               <button
-                class="flex items-center max-w-full h-[50px] sm:h-auto px-4 gap-1 rounded-sm transition-all md:w-[210px] justify-center text-center bg-[#DF3F01] md:px-[10px] md:py-[10px] md:gap-[10px] hover:border-white border border-transparent cursor-pointer cormorant-garamond-bold text-sm md:text-[24px] font-semibold"
+                class="flex items-center max-w-full h-[50px] sm:h-auto px-4 gap-1 rounded-full transition-all md:w-[210px] justify-center text-center bg-[#DF3F01] md:px-[10px] md:py-[10px] md:gap-[10px] hover:border-white border border-transparent cursor-pointer cormorant-garamond-bold text-sm md:text-[24px] font-semibold"
               >
                 EXPLORE
                 <img
@@ -413,7 +424,7 @@
     </section>
     <section data-aos="fade-up" data-aos-duration="3000" class="mt-10">
       <div
-        class="border border-[#DF3F01] p-5 m-2 lg:m-[100px] lg:p-20 rounded-md md:border-dashed"
+        class="border border-[#DF3F01] p-5 m-2 lg:m-[100px] lg:p-20 rounded-3xl md:border-dashed"
       >
         <div class="flex-col items-center justify-center text-center">
           <p
@@ -679,7 +690,7 @@
         </div>
         <div class="flex items-center justify-center mt-10 md:mt-12">
           <button
-            class="text-white cormorant-garamond-bold font-bold text-sm md:text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-sm p-2 md:p-4 border border-[#DF3F01]"
+            class="text-white cormorant-garamond-bold font-bold text-sm md:text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-full p-2 md:p-4 border border-[#DF3F01]"
           >
             ORDER NOW
             <img
@@ -891,7 +902,7 @@
             class="md:block hidden md:h-[300px] lg:w-[600px] mt-4"
           />
           <button
-            class="text-white cormorant-garamond-bold font-bold text-sm p-2 md:text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-sm md:p-4 border border-[#DF3F01] mt-4"
+            class="text-white cormorant-garamond-bold font-bold text-sm p-2 md:text-lg flex justify-center items-center gap-2 transition-all hover:bg-[#DF3F01] rounded-full md:p-4 border border-[#DF3F01] mt-4"
           >
             BECOME A CHEFS
             <img
@@ -963,7 +974,7 @@
             class="lg:w-[720px] md:h-[360px] text-white flex-wrap flex place-content-between mt-7"
           >
             <div
-              class="md:w-[350px] w-full mb-3 h-[70px] p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] rounded-2xl p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="text"
@@ -981,7 +992,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full mb-3 h-[70px] p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] rounded-2xl p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="tel"
@@ -999,7 +1010,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full mb-3 h-[70px] p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] rounded-2xl p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
             >
               <input
                 type="number"
@@ -1018,7 +1029,7 @@
             </div>
 
             <div
-              class="md:w-[350px] w-full mb-3 h-[70px] p-2 md:p-4 justify-between bg-transparent border border-opacity-60 flex items-center"
+              class="md:w-[350px] w-full mb-3 h-[70px] p-2 md:p-4 justify-between bg-transparent rounded-2xl border border-opacity-60 flex items-center"
             >
               <input
                 type="number"
@@ -1038,14 +1049,14 @@
             <textarea
               id="message"
               name="message"
-              class="lg:w-[720px] w-full h-[170px] pl-2 md:pl-5 bg-transparent border border-opacity-60 text-[24px] font-light pt-7"
+              class="lg:w-[720px] w-full h-[170px] pl-2 md:pl-5 bg-transparent border rounded-2xl border-opacity-60 text-[24px] font-light pt-7"
               rows="4"
               placeholder="Message"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="flex items-center transition-all justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold text-xs p-3 md:text-lg font-medium md:font-bold mt-5"
+            class="flex items-center transition-all justify-center bg-[#DF3F01] md:px-[20px] md:py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-full cormorant-garamond-bold text-xs p-3 md:text-xl font-medium md:font-bold mt-5"
           >
             BOOK A TABLE
             <img src="foodimages/arrow-right1.png" class="w-[16px]" alt="" />
@@ -1221,7 +1232,7 @@
                 </p>
               </div>
               <p
-                class="text-black text-[16px] md:text-[16px] md:text-[20px] uppercase cormorant-garamond-bold mt-1 font-bold pr-3"
+                class="text-black text-[16px] md:text-[20px] uppercase cormorant-garamond-bold mt-1 font-bold pr-3"
               >
                 The Art of Food Pairing Guide to Perfect Your Palate
               </p>
@@ -1241,7 +1252,7 @@
         <div class="flex justify-center">
           <button
             type="submit"
-            class="flex items-center text-sm text-white transition-all justify-center bg-[#DF3F01] px-[20px] py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-sm cormorant-garamond-bold md:text-lg font-bold mt-5 uppercase"
+            class="flex items-center text-sm text-white transition-all justify-center bg-[#DF3F01] px-[20px] py-[10px] gap-[10px] hover:border-white border border-transparent cursor-pointer rounded-full cormorant-garamond-bold md:text-xl font-bold mt-5 uppercase"
           >
             See All Blogs
             <img src="foodimages/arrow-right1.png" class="w-[16px]" alt="" />
@@ -1314,6 +1325,12 @@
         </div>
       </div>
     </section>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
     <script>
       AOS.init();
     </script>
